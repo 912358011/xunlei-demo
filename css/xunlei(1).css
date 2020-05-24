@@ -1,0 +1,242 @@
+html,body,.one,.two,.two>img,.three,.three img,.four,.four img,.five,.five>img{
+    width: 100%;
+    height: 100%;
+}
+.two>img,.five>img{
+    float: left;
+}
+/*导航条样式开始*/
+.nav{
+    width: 100%;
+    height: 85px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.logo{
+    float: left;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+.nav_right{
+    float: right;
+}
+.nav_right>li{
+    float: left;
+    width: 156px;
+    height: 85px;
+    line-height: 85px;
+}
+.nav_right a{
+    color: #fff;
+}
+.nav_right i{
+    font-size: 20px;
+    margin-right: 13px;
+}
+.nav_hidden{
+    width: 156px;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    right: -156px;
+    top: 0;
+    transition: all .5s;
+}
+.more{
+    position: relative;
+    z-index: 666;
+}
+.more:hover+.nav_hidden{
+    right: 0;
+}
+.nav_hidden:hover{
+    right: 0;
+}
+/*导航条样式结束*/
+/*第一块样式开始*/
+.one{
+    overflow: hidden;
+    position: relative;
+}
+.one>video{
+    width: 100%;
+    position: relative;
+    top: -40px;
+}
+.video_text{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.video_text>img{
+    width: 716px;
+    margin-top: 280px;
+}
+.video_text>a{
+    display: block;
+}
+.download{
+    width: 180px;
+    height: 50px;
+    border: 1px solid #fff;
+    color: #fff;
+    line-height: 50px;
+    margin: 30px auto 20px;
+}
+.download:hover{
+    background-color: rgba(255,255,255,.5);
+}
+.video_text .arrow{
+    font-size: 40px;
+    color: #fff;
+    position: relative;
+    top: 0;
+    -webkit-animation: upDown 1s infinite linear;
+}
+@-webkit-keyframes upDown {
+    0%{
+        top: 0;
+    }
+    33%{
+        top: 2px;
+    }
+    66%{
+        top: 0;
+    }
+    100%{
+        top: -2px;
+    }
+ }
+/*第一块样式结束*/
+/*第二块样式开始*/
+.two{
+    position: relative;
+}
+.two_btn{
+    position: absolute;
+    bottom: 50px;
+    width: 510px ;
+    left: 50%;
+    margin-left: -255px;
+}
+.two_btn>li{
+    width: 102px;
+    height: 70px;
+    float: left;
+    border-bottom: 1px solid rgba(255,255,255,.6);
+}
+.two_btn div{
+    width: 46.2px;
+    height: 40.6px;
+    background-color: palegreen;
+    margin: 14.7px auto;
+    background: url("../images/carousel_btns.png") no-repeat;
+    background-size: 815px;
+    transition: all .5s linear;
+}
+.two_btn .item1{
+    background-position: -639px;
+}
+.two_btn .item2{
+    background-position: -116px;
+}
+.two_btn .item3{
+    background-position: -735px;
+}
+.two_btn .item4{
+    background-position: -223px;
+}
+.two_btn .item5{
+    background-position: -445px;
+}
+.two_btn>li:hover{
+    border-bottom-color: #fff;
+}
+.two_btn>li:hover div{
+    transform: translateY(-3px);
+}
+/*第二块样式结束*/
+/*第三块开始*/
+.three_left,.three_right{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.three_right,.three_left>div,.four_left,.four_top,.four_bottom>div{
+    position: relative;
+    overflow: hidden;
+}
+.three_right:hover .hidden,.three_left>div:hover .hidden,.four_left:hover .hidden,.four_top:hover .hidden,.four_bottom>div:hover .hidden{
+    left: 0;
+}
+.three_left>div{
+    width: 100%;
+    height: 50%;
+}
+.hidden{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transition: all .5s linear;
+}
+/*第三块结束*/
+/*第四块样式开始*/
+.four_left,.four_right{
+    height: 100%;
+    float: left;
+}
+.four_left{
+    width: 34%;
+}
+.four_right{
+    width: 66%;
+}
+.four_top,.four_bottom{
+    width: 100%;
+    height: 50%;
+}
+.four_bottom>div{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+/*第四块样式结束*/
+/*锚点开始*/
+.aside_btn{
+    position: fixed;
+    right: 40px;
+    height: 185px;
+    top: 50%;
+    margin-top: -92.5px;
+}
+.aside_btn a{
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+/*锚点结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

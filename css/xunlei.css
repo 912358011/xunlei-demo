@@ -1,0 +1,244 @@
+html, body,.one,.two, .two>img,.three,.three_right img,.three img,.disi,.disi img,.diwu,.diwu img{
+    width: 100%;
+    height: 100%;
+}
+/* .two>img,.diwu>img{
+    float: left;
+} */
+/* 导航样式开始 */
+.nav{
+    width: 100%;
+    height: 85px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+}
+.logo{
+    float: left;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.nav_right{
+    float: right;
+}
+.nav_right>li{
+    float: left;
+    width:156px;
+    height: 85px;
+    line-height: 85px;
+}
+.nav_right i{
+    font-size: 20px;
+    margin-right: 13px;
+}
+.nav_right a {
+    color: #fff;
+}
+.nav_right span{
+    position: relative;
+    top: -3px;
+}
+.nav_hidden{
+    width: 156px;
+    height: 100%;
+    background-color: rgba(240, 17, 17, 0.479);
+    position: fixed;
+    top:0;
+    right:-156px; 
+    transition: all .5s;
+}
+.more{
+    position: relative;
+    z-index: 666;
+}
+.more:hover+.nav_hidden{
+    right: 0px;
+}
+.nav_hidden:hover{
+    right: 0px;
+}
+/* 导航样式结束 */
+
+
+/* 第一块开始 */
+.one{
+    overflow: hidden;
+    position:relative;
+}
+.one>video{
+    width: 100%;
+    position: relative;
+    /* top: -40px; */
+}
+.video_text{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.video_text>img{
+    width: 716px;
+    margin-top: 280px;
+}
+.video_text>a{
+    display: block;
+}
+.download{
+    width: 180px;
+    height: 50px;
+    border: 1px solid #fff;
+    color: #fff;
+    line-height: 50px;
+    margin: 30px auto 20px;
+}
+.download:hover{
+    background-color: rgba(255, 255, 255, .5)
+}
+.video_text .arrow{
+    color: #fff;
+    font-size: 40px;
+    position: relative;
+    top: 0;
+    animation: upDown 1s infinite linear;
+}
+@keyframes upDown{
+    0%{
+        top:0;
+    }
+    33%{
+        top:-2px;
+    }
+    66%{
+        top: 0;
+    }
+    100%{
+        top:2px;
+    }
+}
+/* 第一块结束 */
+
+
+/* 第二块开始 */
+.two{
+    position:relative;
+}
+.two_btn{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -255px;
+}
+.two_btn>li{
+    width: 102px;
+    height: 70px;
+    float: left;
+    border-bottom: 1px solid rgba(255, 255, 255, .6)
+}
+.two_btn div{
+    width: 46.2px;
+    height: 40.6px;
+    background-color: red;
+    margin: 14.7px auto;
+    background: url("../images/carousel_btns.png") no-repeat;
+    background-size: 815px;
+    transition: all .5s linear;
+}
+.two_btn .iten1{
+    background-position: -640px;
+}
+.two_btn .iten2{
+    background-position: -115px;
+}
+.two_btn .iten3{
+    background-position: -735px;
+}
+.two_btn .iten4{
+    background-position: -223px;
+}.two_btn .iten5{
+    background-position: -445px;
+}
+.two_btn>li:hover{
+   border-bottom-color: #fff;
+}
+.two_btn>li:hover div{
+   transform: translateY(-3px);
+}
+/* 第二块结束 */
+
+
+
+/* 第三块开始 */
+.three_lefe,.three_right{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.three_right,.three_lefe>div,.disi_lefe,.disi_top,.disi_bottom>div{
+    position: relative;
+    overflow: hidden;
+}
+.three_right:hover .hidden ,.three_lefe>div:hover .hidden,.disi_lefe:hover .hidden,.disi_top:hover .hidden,.disi_bottom>div:hover .hidden{
+    left: 0;
+}
+.three_lefe>div{
+    width: 100%;
+    height: 50%;
+}
+.hidden{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transition: all .5s linear;
+}
+
+/* 第三块结束 */
+
+/* 第四块开始 */
+.disi_lefe,.disi_right{
+    height: 100%;
+    float: left;
+}
+.disi_lefe{
+    width: 40%;
+}
+.disi_right{
+    width: 60%;
+    height: 100%;
+}
+.disi_top{
+    width: 100%;
+    height: 50%;
+}
+.disi_bottom>div{
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+/* 第四块结束 */
+
+
+
+
+/* 锚点开始 */
+.aside_btn{
+    position: fixed;
+    right: 40px;
+    height: 200px;
+    top: 50%;
+    margin-top:-100px; 
+}
+.aside_btn a{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid red;
+    border-radius: 50%;
+    margin-bottom: 30px; 
+}
+
+/* 锚点结束 */
